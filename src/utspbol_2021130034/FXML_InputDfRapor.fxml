@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2021130034.FXML_InputDfRaporController">
+   <children>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="350.0" style="-fx-background-color: #f5efeb;">
+         <children>
+            <Text layoutX="96.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT NILAI RAPOR" textAlignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KODE PELAJARAN">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="23.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL DAFTAR">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="dtdftr" layoutX="148.0" layoutY="146.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </DatePicker>
+            <Button fx:id="btnkeluar" layoutX="312.0" layoutY="15.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsimpan" layoutX="257.0" layoutY="370.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Simpan" textFill="WHITE" />
+            <Button fx:id="btnbatal" layoutX="164.0" layoutY="370.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Batal" textFill="WHITE" />
+            <TextField fx:id="txtn1" layoutX="73.0" layoutY="212.0" prefHeight="27.0" prefWidth="76.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Text layoutX="24.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NILAI PER SEMESTER">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Group layoutX="-116.0" layoutY="-22.0" />
+            <Text layoutX="23.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMT 1">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtn2" layoutX="248.0" layoutY="212.0" prefHeight="27.0" prefWidth="76.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Text layoutX="195.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMT 2">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtn3" layoutX="76.0" layoutY="255.0" prefHeight="27.0" prefWidth="76.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Text layoutX="23.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMT 3">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtn4" layoutX="248.0" layoutY="255.0" prefHeight="27.0" prefWidth="76.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Text layoutX="195.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMT 4">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtn5" layoutX="76.0" layoutY="302.0" prefHeight="27.0" prefWidth="76.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Text layoutX="23.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SMT 5">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnpilihnisn" layoutX="271.0" layoutY="74.0" mnemonicParsing="false" onAction="#pilihnisnklik" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Pilih" textFill="WHITE" />
+            <TextField fx:id="txtnisn" layoutX="149.0" layoutY="73.0" prefHeight="27.0" prefWidth="118.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <TextField fx:id="txtkdmapel" layoutX="149.0" layoutY="108.0" prefHeight="27.0" prefWidth="118.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Button fx:id="btnpilihmp" layoutX="271.0" layoutY="109.0" mnemonicParsing="false" onAction="#pilihmpklik" prefHeight="25.0" prefWidth="49.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Pilih" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

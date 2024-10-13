@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #f5efeb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2021130034.FXML_InputCalonSiswaController">
+   <children>
+      <Text layoutX="77.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT DATA PENDAFTAR" textAlignment="CENTER">
+         <font>
+            <Font name="Franklin Gothic Demi" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="20.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL LAHIR">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="26.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ALAMAT">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="21.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JENIS KELAMIN">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtnisn" layoutX="148.0" layoutY="74.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+      <DatePicker fx:id="dtlahir" layoutX="148.0" layoutY="146.0" nodeOrientation="LEFT_TO_RIGHT" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </DatePicker>
+      <TextField fx:id="txtnama" layoutX="149.0" layoutY="110.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+      <TextField fx:id="txtalamat" layoutX="148.0" layoutY="180.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5;" />
+      <Button fx:id="btnkeluar" layoutX="312.0" layoutY="15.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnsimpan" layoutX="244.0" layoutY="359.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Simpan" textFill="WHITE" />
+      <Button fx:id="btnbatal" layoutX="151.0" layoutY="359.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Batal" textFill="WHITE" />
+      <TextField fx:id="txtsekolahasal" layoutX="149.0" layoutY="250.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5; -fx-border-color: black; -fx-border-radius: 5;" />
+      <Text layoutX="22.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SEKOLAH ASAL">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Group layoutX="-116.0" layoutY="-22.0">
+         <children>
+            <RadioButton fx:id="rbperempuan" layoutX="264.0" layoutY="240.0" mnemonicParsing="false" text="Perempuan">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tggender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rblaki" layoutX="364.0" layoutY="240.0" mnemonicParsing="false" text="Laki-Laki" toggleGroup="$tggender" />
+         </children>
+      </Group>
+      <Text layoutX="23.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JALUR DAFTAR">
+         <font>
+            <Font name="Franklin Gothic Book" size="14.0" />
+         </font>
+      </Text>
+      <Line endX="200.0" layoutX="124.0" layoutY="294.0" startX="-100.0" />
+      <RadioButton fx:id="rbzona" layoutX="248.0" layoutY="304.0" mnemonicParsing="false" text="Zonasi">
+         <toggleGroup>
+            <ToggleGroup fx:id="tgjalur" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbrapor" layoutX="148.0" layoutY="304.0" mnemonicParsing="false" text="Rapor" toggleGroup="$tgjalur" />
+   </children>
+</AnchorPane>

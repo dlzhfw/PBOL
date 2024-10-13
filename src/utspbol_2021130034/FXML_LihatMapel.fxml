@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbol_2021130034.FXML_LihatMapelController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5efeb;">
+         <children>
+            <TableView fx:id="tbvmapel" layoutX="125.0" layoutY="64.0" prefHeight="272.0" prefWidth="340.0" style="-fx-background-color: #c8d9e6; -fx-background-radius: 10px;">
+              <columns>
+                <TableColumn prefWidth="75.0" text="C1" />
+                <TableColumn prefWidth="75.0" text="C2" />
+              </columns>
+            </TableView>
+            <Text layoutX="188.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA MATA PELAJARAN" textAlignment="CENTER" wrappingWidth="233.490234375">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnkeluar" layoutX="568.0" layoutY="10.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Demi Cond" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnawal" layoutX="240.0" layoutY="345.0" mnemonicParsing="false" onAction="#awalklik" style="-fx-background-radius: 20px;" text="&lt;&lt;" />
+            <Button fx:id="btnsebelum" layoutX="284.0" layoutY="345.0" mnemonicParsing="false" onAction="#sebelumklik" style="-fx-background-radius: 20px;" text="&lt;" />
+            <Button fx:id="btnsesudah" layoutX="319.0" layoutY="345.0" mnemonicParsing="false" onAction="#sesudahklik" style="-fx-background-radius: 20;" text="&gt;" />
+            <Button fx:id="btnakhir" layoutX="355.0" layoutY="345.0" mnemonicParsing="false" onAction="#akhirklik" style="-fx-background-radius: 20px;" text="&gt;&gt;" />
+            <Button fx:id="btntambah" layoutX="406.0" layoutY="347.0" mnemonicParsing="false" onAction="#tambahklik" style="-fx-background-radius: 20px; -fx-background-color: #293535;" text="Tambah" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Book" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnedit" layoutX="127.0" layoutY="347.0" mnemonicParsing="false" onAction="#editklik" style="-fx-background-radius: 20px; -fx-background-color: #293535;" text="Edit" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Book" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnhapus" layoutX="169.0" layoutY="347.0" mnemonicParsing="false" onAction="#hapusklik" style="-fx-background-radius: 20px; -fx-background-color: #293535;" text="Hapus" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Book" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

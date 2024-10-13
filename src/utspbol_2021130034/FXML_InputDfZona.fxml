@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2021130034.FXML_InputDfZonaController">
+   <children>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #f5efeb;">
+         <children>
+            <Text layoutX="119.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT ZONASI" textAlignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NO DAFTAR">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="22.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NISN">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TANGGAL DAFTAR">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="28.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JARAK">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtnozona" layoutX="150.0" layoutY="123.0" prefHeight="27.0" prefWidth="183.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <DatePicker fx:id="dtdftr" layoutX="150.0" layoutY="195.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="27.0" prefWidth="183.0" style="-fx-border-color: black; -fx-background-radius: 5px; -fx-border-radius: 5px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </DatePicker>
+            <TextField fx:id="txtnisn" layoutX="151.0" layoutY="159.0" prefHeight="27.0" prefWidth="131.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtjarak" layoutX="150.0" layoutY="229.0" prefHeight="27.0" prefWidth="183.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Button fx:id="btnkeluar" layoutX="312.0" layoutY="15.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsimpan" layoutX="246.0" layoutY="283.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Simpan" textFill="WHITE" />
+            <Button fx:id="btnbatal" layoutX="153.0" layoutY="283.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Batal" textFill="WHITE" />
+            <Group layoutX="-116.0" layoutY="-22.0" />
+            <Button fx:id="btnpilih" layoutX="287.0" layoutY="160.0" mnemonicParsing="false" onAction="#pilihklik" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Pilih" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

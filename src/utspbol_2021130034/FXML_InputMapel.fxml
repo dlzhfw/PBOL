@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="349.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbol_2021130034.FXML_InputMapelController">
+   <children>
+      <AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #f5efeb;">
+         <children>
+            <Text layoutX="53.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT DATA MATA PELAJARAN" textAlignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KODE">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="24.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA PELAJARAN">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtkdmapel" layoutX="152.0" layoutY="149.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtnamamapel" layoutX="152.0" layoutY="183.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <Button fx:id="btnkeluar" layoutX="312.0" layoutY="29.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsimpan" layoutX="248.0" layoutY="233.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Simpan" textFill="WHITE" />
+            <Button fx:id="btnbatal" layoutX="152.0" layoutY="233.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Batal" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

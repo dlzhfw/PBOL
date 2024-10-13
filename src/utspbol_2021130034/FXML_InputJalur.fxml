@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="utspbol_2021130034.FXML_InputJalurController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f5efeb;">
+         <children>
+            <Text layoutX="168.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="INPUT DATA JALUR PENERIMAAN" textAlignment="CENTER">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="136.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID JALUR">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="136.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAMA JALUR">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="136.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KUOTA">
+               <font>
+                  <Font name="Franklin Gothic Book" size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtidjalur" layoutX="264.0" layoutY="96.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtnamajalur" layoutX="265.0" layoutY="132.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5px;" />
+            <TextField fx:id="txtkuota" layoutX="264.0" layoutY="169.0" prefHeight="25.0" prefWidth="174.0" style="-fx-background-radius: 5px; -fx-border-color: black; -fx-border-radius: 5;" />
+            <Button fx:id="btnkeluar" layoutX="562.0" layoutY="14.0" mnemonicParsing="false" onAction="#keluarklik" style="-fx-background-color: #293535;" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsimpan" layoutX="364.0" layoutY="317.0" mnemonicParsing="false" onAction="#simpanklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Simpan" textFill="WHITE" />
+            <Button fx:id="btnbatal" layoutX="275.0" layoutY="317.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #293535; -fx-background-radius: 20px;" text="Batal" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

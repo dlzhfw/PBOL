@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="utspbol_2021130034.FXMLDocumentController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <MenuBar layoutX="76.0" layoutY="43.0" prefHeight="25.0" prefWidth="467.0">
+        <menus>
+          <Menu fx:id="mndaftar" mnemonicParsing="false" onAction="#daftarklik" text="DAFTAR">
+            <items>
+              <MenuItem fx:id="dftrrapor" mnemonicParsing="false" text="Jalur Rapor" />
+                  <MenuItem fx:id="dftrzona" mnemonicParsing="false" text="Jalur Zonasi" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnlihat" mnemonicParsing="false" onAction="#lihatklik" text="LIHAT DATA">
+            <items>
+              <MenuItem fx:id="mnlihatdaftar" mnemonicParsing="false" onAction="#lihatdaftarklik" text="DATA PENDAFTAR" />
+                  <MenuItem fx:id="mnjalur" mnemonicParsing="false" onAction="#mnjalurklik" text="MATA PELAJARAN" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="HASIL SELEKSI">
+            <items>
+              <MenuItem fx:id="mnhslrapor" mnemonicParsing="false" onAction="#hslraporklik" text="JALUR RAPOR" />
+                  <MenuItem fx:id="mnhslzonasi" mnemonicParsing="false" onAction="#hslzonasiklik" text="JALUR ZONASI" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+    </children>
+</AnchorPane>
